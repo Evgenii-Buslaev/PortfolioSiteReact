@@ -7,10 +7,6 @@ function ImageButtons({ click, style, image, alt }) {
         className={styles.button}
         style={{
           ...style,
-          appearance: "none",
-          border: "none",
-          outline: "none",
-          background: "none",
         }}
         onClick={click}
       >

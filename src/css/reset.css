@@ -11,6 +11,8 @@ html {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #001;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 input,

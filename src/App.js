@@ -3,6 +3,7 @@ import { useState } from "react";
 import AppSection from "./components/AppSection";
 import Greeting from "./components/Greeting";
 import "./App.css";
+import "./css/reset.css";
 
 function App() {
   const [mode, setMode] = useState("light");
