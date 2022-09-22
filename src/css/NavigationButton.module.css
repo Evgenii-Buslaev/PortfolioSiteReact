@@ -15,3 +15,9 @@
 .navBtn :hover {
   opacity: 0.3;
 }
+
+.nameBtn {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 5rem;
+}

@@ -3,6 +3,8 @@ import { useState } from "react";
 import NavigationButton from "./UI/NavigationButton";
 import AppSection from "./components/AppSection";
 import Greeting from "./components/Greeting";
+import About from "./components/About";
+
 import "./App.css";
 import "./css/reset.css";
 
@@ -26,7 +28,9 @@ function App() {
         <Greeting mode={mode} changeMode={() => changeMode(mode)} />
       </AppSection>
 
-      <AppSection name="about" />
+      <AppSection name="about">
+        <About />
+      </AppSection>
       <AppSection name="portfolio" />
       <AppSection name="contacts" />
     </div>

@@ -1,9 +1,9 @@
 import styles from "../css/NavigationButton.module.css";
 
-function NavigationButton({ to, position, text }) {
+function NavigationButton({ position, text }) {
   return (
     <div className={styles.navBtn} style={position}>
-      <p>{text}</p>
+      <p className={styles.nameBtn}>{text}</p>
     </div>
   );
 }
