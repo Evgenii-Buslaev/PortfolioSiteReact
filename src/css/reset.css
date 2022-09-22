@@ -19,6 +19,15 @@ select {
   -webkit-appearance: none;
 }
 
+button,
+input,
+textarea {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
 body,
 h1,
 h2,

@@ -1,0 +1,12 @@
+.button {
+  position: absolute;
+}
+
+.button:hover {
+  opacity: 0.3;
+}
+
+.image {
+  width: 4rem;
+  cursor: pointer;
+}
