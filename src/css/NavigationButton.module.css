@@ -1,0 +1,17 @@
+.navBtn {
+  position: fixed;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(151, 151, 151);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navBtn img {
+  width: 80%;
+}
+
+.navBtn :hover {
+  opacity: 0.3;
+}
