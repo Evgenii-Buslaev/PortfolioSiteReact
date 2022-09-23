@@ -2,7 +2,7 @@
   font-size: 3rem;
   font-weight: bold;
   color: rgba(230, 215, 215, 0.74);
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
 .portfolioCont {
@@ -13,4 +13,15 @@
   flex-wrap: wrap;
   width: 80%;
   height: 80%;
+}
+
+.backButton {
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: pink;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  opacity: 0.3;
 }

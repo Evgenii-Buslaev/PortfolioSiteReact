@@ -1,35 +1,13 @@
 import { useState } from "react";
+
 import Item from "../components/Item";
+import { store } from "../store/store";
 
 import styles from "../css/Portfolio.module.css";
 
-function Portfolio() {
-  const store = {
-    portfolio: {
-      header: "Портфолио",
-      content: [
-        "Верстка",
-        "JavaScript-приложения",
-        "React-приложения",
-        "Алгоритмы",
-      ],
-    },
-    layout: {
-      header: "Верстка сайтов",
-      content: ["Лендинг", "Карточка товара"],
-    },
-    javascript: {
-      header: "JavaScript-приложения",
-      content: ["Помодоро-таймер", "Секундомер"],
-    },
-    react: {
-      header: "React-приложения",
-      content: ["Заметки", "Поиск фильмов"],
-    },
-    algoritmics: { header: "Алгоритмы", content: ["Codewars-задачи"] },
-  };
+const { portfolio, layout, javascript, react, algoritmics } = store;
 
-  const { portfolio, layout, javascript, react, algoritmics } = store;
+function Portfolio() {
   const [header, setHeader] = useState(portfolio.header);
   const [items, setItems] = useState(portfolio.content);
 
@@ -52,7 +30,7 @@ function Portfolio() {
         setHeader(algoritmics.header);
         break;
       default:
-        getBack();
+        return;
     }
   }
 
@@ -64,12 +42,20 @@ function Portfolio() {
   return (
     <>
       <h1 className={styles.portfolioHeader}>{header}</h1>
+      {header !== portfolio.header ? (
+        <button className={styles.backButton} onClick={getBack}>
+          Назад
+        </button>
+      ) : null}
       <div className={styles.portfolioCont}>
-        {items !== portfolio.content ? (
-          <button onClick={getBack}>Назад</button>
-        ) : null}
         {items.map((item) => (
-          <Item name={item} key={item} click={() => openDiractory(item)} />
+          <Item
+            name={item.name}
+            key={item.name}
+            click={() => openDiractory(item.name)}
+            link={item.deployment || item.code}
+            image={item.image}
+          />
         ))}
       </div>
     </>
