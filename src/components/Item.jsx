@@ -19,11 +19,11 @@ function Item({ name, click, link, image }) {
 
   return (
     <a
+      className={styles.item}
+      target="_blank"
       href={link}
       ref={element}
       rel="noreferrer"
-      target="_blank"
-      className={styles.item}
       onClick={click}
       onMouseEnter={() => addBackground(element)}
       onMouseLeave={() => deleteBackground(element)}
