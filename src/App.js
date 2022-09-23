@@ -31,6 +31,7 @@ function App() {
       <AppSection name="about">
         <About />
       </AppSection>
+
       <AppSection name="portfolio" />
       <AppSection name="contacts" />
     </div>

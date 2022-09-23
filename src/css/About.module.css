@@ -3,3 +3,60 @@
   height: 100%;
   background-color: rgb(53, 50, 50);
 }
+
+.aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.aboutContent img {
+  width: 30%;
+  border-radius: 20px;
+}
+
+.aboutHeader {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(230, 215, 215, 0.74);
+  padding: 2rem;
+}
+
+.aboutDescription {
+  margin: auto 3rem;
+  text-align: justify;
+  width: 30vw;
+}
+
+.aboutDescription p {
+  font-size: 1.3rem;
+  color: rgba(230, 215, 215, 0.74);
+}
+
+.aboutButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0;
+  width: 100%;
+  height: 3rem;
+}
+
+.aboutButtons a {
+  width: 40%;
+  padding: 0.8rem 0.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100%;
+  color: rgba(230, 215, 215, 0.74);
+  border: solid rgba(230, 215, 215, 0.74);
+}
+
+.aboutButtons a:hover {
+  background-color: rgba(230, 215, 215, 0.74);
+  color: black;
+}
