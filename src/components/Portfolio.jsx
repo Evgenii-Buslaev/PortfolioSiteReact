@@ -1,9 +1,13 @@
+import styles from "../css/Portfolio.module.css";
+
 function Portfolio() {
   return (
-    <div>
-      <h1>Портфолио</h1>
-      <div></div>
-    </div>
+    <>
+      <h1 className={styles.portfolioHeader}>Портфолио</h1>
+      <div className={styles.portfolioCont}>
+        <div></div>
+      </div>
+    </>
   );
 }
 
