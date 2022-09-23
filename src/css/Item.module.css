@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(53, 50, 50);
+}
+
+.item:hover {
+  cursor: pointer;
+  box-shadow: 0.5rem 0.5rem 3rem rgb(72, 136, 117);
+}
+
+.item h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: rgba(230, 215, 215, 0.74);
+}

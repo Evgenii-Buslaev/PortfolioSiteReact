@@ -5,6 +5,7 @@ import AppSection from "./components/AppSection";
 import Greeting from "./components/Greeting";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Item from "./components/Item";
 
 import "./App.css";
 import "./css/reset.css";
@@ -36,6 +37,7 @@ function App() {
       <AppSection name="portfolio">
         <Portfolio />
       </AppSection>
+
       <AppSection name="contacts" />
     </div>
   );
