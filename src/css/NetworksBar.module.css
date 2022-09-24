@@ -1,0 +1,17 @@
+.networksBarCont {
+  border: solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
+  width: 60%;
+  height: 20%;
+}
+
+.networksBarCont img {
+  width: 5rem;
+}
+
+.networksBarCont img:hover {
+  opacity: 0.3;
+}

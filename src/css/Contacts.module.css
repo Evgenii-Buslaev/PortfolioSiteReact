@@ -1,0 +1,33 @@
+.contactsCont {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(53, 50, 50);
+  margin: 0;
+}
+
+.contactsHeader {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(230, 215, 215, 0.74);
+  padding: 2rem;
+}
+
+.rowsCont {
+  margin: auto;
+  width: 60%;
+  height: 20%;
+  border: solid black;
+}
+
+.row {
+  margin: 1rem auto;
+  width: 80%;
+  height: 20%;
+  color: rgba(230, 215, 215, 0.74);
+  font-size: 1.2rem;
+}
+
+.row a {
+  text-decoration: none;
+  color: pink;
+}
