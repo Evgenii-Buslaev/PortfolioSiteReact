@@ -19,3 +19,39 @@
   font-size: 5rem;
   color: rgba(230, 215, 215, 0.74);
 }
+
+@media (max-width: 1550px) {
+  .greetingCont h1 {
+    font-size: 5rem;
+  }
+  .greetingCont h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .greetingCont h1 {
+    font-size: 4rem;
+  }
+  .greetingCont h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .greetingCont h1 {
+    font-size: 4rem;
+  }
+  .greetingCont h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .greetingCont h1 {
+    font-size: 3rem;
+  }
+  .greetingCont h2 {
+    font-size: 1rem;
+  }
+}

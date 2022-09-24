@@ -4,20 +4,6 @@
   background-color: rgb(53, 50, 50);
 }
 
-.aboutContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  height: auto;
-  margin: 2rem auto;
-}
-
-.aboutContent img {
-  width: 30%;
-  border-radius: 20px;
-}
-
 .aboutHeader {
   font-size: 3rem;
   font-weight: bold;
@@ -25,38 +11,143 @@
   padding: 2rem;
 }
 
+.aboutContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+}
+
+.photoCont {
+  width: 20vw;
+  height: auto;
+  border-radius: 20px;
+  border: solid wheat;
+  padding: 2rem;
+}
+
+.photoCont img {
+  width: 15vw;
+  border-radius: 1rem;
+}
+
 .aboutDescription {
-  margin: auto 3rem;
   text-align: justify;
   width: 30vw;
 }
 
 .aboutDescription p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: rgba(230, 215, 215, 0.74);
+  border: solid wheat;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-indent: 2rem;
+}
+
+.aboutDescription strong {
+  color: rgba(255, 249, 249, 0.74);
+  font-weight: bold;
 }
 
 .aboutButtons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 2rem 0 0;
+  margin: 0 auto;
   width: 100%;
-  height: 3rem;
+  height: auto;
 }
 
 .aboutButtons a {
-  width: 40%;
+  margin: 0.4rem;
+  width: 100%;
   padding: 0.8rem 0.3rem;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   line-height: 100%;
   color: rgba(230, 215, 215, 0.74);
-  border: solid rgba(230, 215, 215, 0.74);
+  border: solid wheat;
+  border-radius: 1rem;
 }
 
 .aboutButtons a:hover {
   background-color: rgba(230, 215, 215, 0.74);
   color: black;
+}
+
+@media (max-width: 1650px) {
+  .aboutDescription {
+    text-align: justify;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1350px) {
+  .aboutDescription {
+    text-align: justify;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutDescription {
+    width: 45vw;
+  }
+  .photoCont {
+    width: 30vw;
+  }
+  .photoCont img {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutContent {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+  }
+  .aboutDescription {
+    width: 90vw;
+  }
+  .photoCont {
+    width: 50vw;
+  }
+  .photoCont img {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .aboutDescription p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutDescription p {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+  .photoCont {
+    width: 70vw;
+    padding: 0.6rem;
+  }
+  .photoCont img {
+    width: 40vw;
+  }
+
+  .aboutButtons a {
+    margin: 0.3rem;
+    padding: 0.4rem 0.4rem;
+    font-size: 0.8rem;
+  }
 }
