@@ -53,7 +53,8 @@ function Portfolio() {
             name={item.name}
             key={item.name}
             click={() => openDiractory(item.name)}
-            link={item.deployment || item.code}
+            deploy={item.deployment || item.code}
+            code={item.code}
             image={item.image}
           />
         ))}
