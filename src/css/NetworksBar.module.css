@@ -1,5 +1,4 @@
 .networksBarCont {
-  border: solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -13,5 +12,7 @@
 }
 
 .networksBarCont img:hover {
+  cursor: pointer;
   opacity: 0.3;
+  transform: scale(1.1);
 }

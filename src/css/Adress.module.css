@@ -1,0 +1,21 @@
+.adressCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 80%;
+}
+
+.adressCont h3 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgba(230, 215, 215, 0.74);
+}
+
+.adressCont iframe {
+  width: 60%;
+  height: 40%;
+  border-radius: 0.5rem;
+}

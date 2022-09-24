@@ -15,14 +15,13 @@
 .rowsCont {
   margin: auto;
   width: 60%;
-  height: 20%;
-  border: solid black;
+  height: 15%;
 }
 
 .row {
   margin: 1rem auto;
   width: 80%;
-  height: 20%;
+  height: 10%;
   color: rgba(230, 215, 215, 0.74);
   font-size: 1.2rem;
 }

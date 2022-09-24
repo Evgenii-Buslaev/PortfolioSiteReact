@@ -1,4 +1,5 @@
 import NetworksBar from "./NetworksBar";
+import Adress from "./Adress";
 
 import vk from "../icons/contacts/VK.png";
 import telegram from "../icons/contacts/TG.png";
@@ -22,6 +23,9 @@ const contacts = [
   },
 ];
 
+const adressLink =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2164.4946568330947!2d65.54810291618271!3d57.14570118094881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43bbe169a941e0ed%3A0x5a0dae51336c3133!2z0JrQvtC70YzRgdC60LjQuSDQv9C10YAuLCAxLCDQotGO0LzQtdC90YwsINCi0Y7QvNC10L3RgdC60LDRjyDQvtCx0LsuLCA2MjUwNDg!5e0!3m2!1sru!2sru!4v1659264340318!5m2!1sru!2sru";
+
 function Contacts() {
   return (
     <div className={styles.contactsCont}>
@@ -36,6 +40,7 @@ function Contacts() {
         </div>
       </div>
       <NetworksBar array={contacts} />
+      <Adress adress="Тюмень, Кольский переулок, 1" link={adressLink} />
     </div>
   );
 }
