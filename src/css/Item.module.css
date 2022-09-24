@@ -52,3 +52,9 @@
     height: 20%;
   }
 }
+
+@media (max-height: 750px) {
+  .itemCont {
+    height: 15%;
+  }
+}

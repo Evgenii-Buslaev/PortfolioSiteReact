@@ -33,10 +33,19 @@
 }
 
 @media (max-width: 770px) {
-  /*  .portfolioCont {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .portfolioCont {
     width: 100%;
-  } */
+  }
+}
+
+@media (max-width: 590px) {
+  .portfolioHeader {
+    padding: 1rem 2rem 0;
+  }
+}
+
+@media (max-height: 800px) {
+  .portfolioCont {
+    height: 70%;
+  }
 }
