@@ -15,7 +15,7 @@
 .rowsCont {
   margin: auto;
   width: 60%;
-  height: 15%;
+  height: 5%;
 }
 
 .row {
@@ -29,4 +29,17 @@
 .row a {
   text-decoration: none;
   color: pink;
+}
+
+@media (max-width: 900px) {
+  .rowsCont {
+    width: 90%;
+    height: 10%;
+  }
+  .row {
+    height: 50%;
+  }
+  .contactsHeader {
+    padding: 1rem;
+  }
 }

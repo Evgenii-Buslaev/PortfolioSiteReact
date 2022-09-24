@@ -16,3 +16,13 @@
   opacity: 0.3;
   transform: scale(1.1);
 }
+
+@media (max-width: 900px) {
+  .networksBarCont {
+    margin: 0.5rem auto;
+    width: 80%;
+  }
+  .networksBarCont img {
+    width: 3rem;
+  }
+}

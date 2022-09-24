@@ -19,3 +19,9 @@
   height: 40%;
   border-radius: 0.5rem;
 }
+
+@media (max-width: 900px) {
+  .adressCont iframe {
+    width: 80%;
+  }
+}

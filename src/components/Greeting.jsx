@@ -11,14 +11,14 @@ function Greeting({ mode, changeMode }) {
       {mode === "dark" ? (
         <ImageButtons
           click={changeMode}
-          style={{ top: "5rem", left: "90%" }}
+          style={{ top: "5rem", left: "80%" }}
           image={dark}
           alt="dark-mode"
         />
       ) : (
         <ImageButtons
           click={changeMode}
-          style={{ top: "5rem", left: "90%" }}
+          style={{ top: "5rem", left: "80%" }}
           image={light}
           alt="light-mode"
         />
