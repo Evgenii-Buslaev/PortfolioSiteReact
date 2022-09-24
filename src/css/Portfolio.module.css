@@ -25,3 +25,18 @@
 .backButton:hover {
   opacity: 0.3;
 }
+
+@media (max-width: 1550px) {
+  .portfolioCont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  /*  .portfolioCont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+}

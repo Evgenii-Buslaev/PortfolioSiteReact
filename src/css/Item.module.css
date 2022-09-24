@@ -39,3 +39,16 @@
 .codeButton:hover {
   color: rgb(248, 36, 71);
 }
+
+@media (max-width: 950px) {
+  .itemCont {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .itemCont {
+    width: 80%;
+    height: 20%;
+  }
+}
