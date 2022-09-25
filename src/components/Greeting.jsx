@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import ImageButtons from "../UI/ImageButtons";
 
 import styles from "../css/Greeting.module.css";
@@ -6,6 +8,22 @@ import dark from "../icons/mode/dark-mode.png";
 import light from "../icons/mode/light-mode.png";
 
 function Greeting({ mode, changeMode }) {
+  let greetingTextContent = "Добро пожаловать";
+  let underTextContent = "на страницу коллекции моих работ";
+
+  const [text, setText] = useState("");
+  const [underText, setUnderText] = useState("");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setTimeout(
+      () => setText(greetingTextContent.slice(0, text.length + 1)),
+      150
+    );
+    if (text.length === greetingTextContent.length)
+      setUnderText(underTextContent);
+  }, [text, greetingTextContent, underTextContent]);
+
   return (
     <>
       {mode === "dark" ? (
@@ -24,8 +42,8 @@ function Greeting({ mode, changeMode }) {
         />
       )}
       <div className={styles.greetingCont}>
-        <h1>Добро пожаловать</h1>
-        <h2>на страницу коллекции моих работ</h2>
+        <h1>{text}</h1>
+        <h2>{underText}</h2>
       </div>
     </>
   );
