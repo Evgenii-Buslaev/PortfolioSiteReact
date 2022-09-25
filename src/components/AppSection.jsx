@@ -9,16 +9,19 @@ function AppSection({ mode, name, children }) {
         ? styles.greeting
         : `${styles.greeting} ${styles.greetingLight}`;
   }
+
   if (name === "about") {
     contStyles =
       mode === "dark" ? styles.about : `${styles.about} ${styles.aboutLight}`;
   }
+
   if (name === "portfolio") {
     contStyles =
       mode === "dark"
         ? styles.portfolio
         : `${styles.portfolio} ${styles.portfolioLight}`;
   }
+
   if (name === "contacts") {
     contStyles =
       mode === "dark"

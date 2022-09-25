@@ -26,7 +26,9 @@ function Item({ mode, name, click, deploy, code, image }) {
       }
     >
       <a
-        className={styles.item}
+        className={
+          mode === "dark" ? styles.item : `${styles.item} ${styles.itemLight}`
+        }
         target="_blank"
         href={deploy}
         ref={element}

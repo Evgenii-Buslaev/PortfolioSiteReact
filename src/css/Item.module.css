@@ -7,7 +7,7 @@
 }
 
 .itemContLight {
-  background-color: rgb(155, 149, 149);
+  background-color: rgb(112, 112, 112);
 }
 
 .item {
@@ -30,6 +30,10 @@
   font-size: 2rem;
   line-height: 2rem;
   color: rgba(230, 215, 215, 0.74);
+}
+
+.itemLight h3 {
+  color: #474646;
 }
 
 .codeButton {

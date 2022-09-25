@@ -7,7 +7,7 @@ import styles from "../css/Portfolio.module.css";
 
 const { portfolio, layout, javascript, react, algoritmics } = store;
 
-function Portfolio() {
+function Portfolio({ mode }) {
   const [header, setHeader] = useState(portfolio.header);
   const [items, setItems] = useState(portfolio.content);
 
@@ -41,7 +41,15 @@ function Portfolio() {
 
   return (
     <>
-      <h1 className={styles.portfolioHeader}>{header}</h1>
+      <h1
+        className={
+          mode === "dark"
+            ? styles.portfolioHeader
+            : `${styles.portfolioHeader} ${styles.portfolioHeaderLight}`
+        }
+      >
+        {header}
+      </h1>
       {header !== portfolio.header ? (
         <button className={styles.backButton} onClick={getBack}>
           Назад
@@ -50,6 +58,7 @@ function Portfolio() {
       <div className={styles.portfolioCont}>
         {items.map((item) => (
           <Item
+            mode={mode}
             name={item.name}
             key={item.name}
             click={() => openDiractory(item.name)}

@@ -5,6 +5,10 @@
   padding: 2rem 2rem 0;
 }
 
+.portfolioHeaderLight {
+  color: #474646;
+}
+
 .portfolioCont {
   margin: auto;
   display: flex;

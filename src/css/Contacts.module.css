@@ -11,6 +11,10 @@
   padding: 2rem;
 }
 
+.contactsHeaderLight {
+  color: #474646;
+}
+
 .rowsCont {
   margin: auto;
   width: 60%;
@@ -23,6 +27,10 @@
   height: 10%;
   color: rgba(230, 215, 215, 0.74);
   font-size: 1.2rem;
+}
+
+.rowLight {
+  color: #474646;
 }
 
 .row a {

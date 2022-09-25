@@ -26,15 +26,31 @@ const contacts = [
 const adressLink =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2164.4946568330947!2d65.54810291618271!3d57.14570118094881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43bbe169a941e0ed%3A0x5a0dae51336c3133!2z0JrQvtC70YzRgdC60LjQuSDQv9C10YAuLCAxLCDQotGO0LzQtdC90YwsINCi0Y7QvNC10L3RgdC60LDRjyDQvtCx0LsuLCA2MjUwNDg!5e0!3m2!1sru!2sru!4v1659264340318!5m2!1sru!2sru";
 
-function Contacts() {
+function Contacts({ mode }) {
   return (
     <div className={styles.contactsCont}>
-      <h2 className={styles.contactsHeader}>Контакты</h2>
+      <h2
+        className={
+          mode === "dark"
+            ? styles.contactsHeader
+            : `${styles.contactsHeaderLight}`
+        }
+      >
+        Контакты
+      </h2>
       <div className={styles.rowsCont}>
-        <div className={styles.row}>
+        <div
+          className={
+            mode === "dark" ? styles.row : `${styles.row} ${styles.rowLight}`
+          }
+        >
           Номер телефона: <a href="tel:+79048895462">+7(904)-889-54-62</a>
         </div>
-        <div className={styles.row}>
+        <div
+          className={
+            mode === "dark" ? styles.row : `${styles.row} ${styles.rowLight}`
+          }
+        >
           Электронная почта:{" "}
           <a href="mailto:eugenebus144@gmail.com">eugenebus144@gmail.com</a>
         </div>

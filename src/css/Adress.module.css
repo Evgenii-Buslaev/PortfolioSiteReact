@@ -14,6 +14,10 @@
   color: rgba(230, 215, 215, 0.74);
 }
 
+.adressContLight h3 {
+  color: #474646;
+}
+
 .adressCont iframe {
   width: 60%;
   height: 40%;

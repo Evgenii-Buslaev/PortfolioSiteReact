@@ -13,11 +13,11 @@
 .about {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(39, 36, 36);
+  background-color: rgb(58, 58, 58);
 }
 
 .aboutLight {
-  background-color: rgb(180, 179, 179);
+  background-color: rgb(153, 152, 152);
 }
 
 .portfolio {
@@ -27,14 +27,13 @@
 }
 
 .portfolioLight {
-  background-color: rgb(172, 171, 171);
-  color: #474646;
+  background-color: rgb(139, 139, 139);
 }
 
 .contacts {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(39, 36, 36);
+  background-color: rgb(58, 58, 58);
 }
 
 .contactsLight {
