@@ -5,9 +5,19 @@
   color: #d6c7c7;
 }
 
+.greetingLight {
+  background-color: rgb(139, 139, 139);
+  color: #474646;
+}
+
 .about {
   width: 100vw;
   height: 100vh;
+  background-color: rgb(39, 36, 36);
+}
+
+.aboutLight {
+  background-color: rgb(180, 179, 179);
 }
 
 .portfolio {
@@ -16,7 +26,17 @@
   background-color: rgb(68, 67, 67);
 }
 
+.portfolioLight {
+  background-color: rgb(172, 171, 171);
+  color: #474646;
+}
+
 .contacts {
   width: 100vw;
   height: 100vh;
+  background-color: rgb(39, 36, 36);
+}
+
+.contactsLight {
+  background-color: rgb(180, 179, 179);
 }

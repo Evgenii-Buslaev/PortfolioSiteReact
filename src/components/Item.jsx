@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 import styles from "../css/Item.module.css";
 
-function Item({ name, click, deploy, code, image }) {
+function Item({ mode, name, click, deploy, code, image }) {
   const element = useRef(null);
 
   function addBackground(elem) {
@@ -18,7 +18,13 @@ function Item({ name, click, deploy, code, image }) {
   }
 
   return (
-    <div className={styles.itemCont}>
+    <div
+      className={
+        mode === "dark"
+          ? styles.itemCont
+          : `${styles.itemCont} ${styles.itemContLight}`
+      }
+    >
       <a
         className={styles.item}
         target="_blank"

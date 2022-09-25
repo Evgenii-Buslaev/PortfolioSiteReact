@@ -1,7 +1,6 @@
 .aboutCont {
   width: 100%;
   height: 100%;
-  background-color: rgb(53, 50, 50);
 }
 
 .aboutHeader {
@@ -9,6 +8,10 @@
   font-weight: bold;
   color: rgba(230, 215, 215, 0.74);
   padding: 2rem;
+}
+
+.aboutHeaderLight {
+  color: #474646;
 }
 
 .aboutContent {
@@ -47,6 +50,10 @@
   text-indent: 2rem;
 }
 
+.aboutDescriptionLight p {
+  color: #474646;
+}
+
 .aboutDescription strong {
   color: rgba(255, 249, 249, 0.74);
   font-weight: bold;
@@ -73,6 +80,10 @@
   color: rgba(230, 215, 215, 0.74);
   border: solid wheat;
   border-radius: 1rem;
+}
+
+.aboutButtonsLight a {
+  color: #474646;
 }
 
 .aboutButtons a:hover {
@@ -127,6 +138,9 @@
 }
 
 @media (max-width: 540px) {
+  .aboutHeader {
+    font-size: 2rem;
+  }
   .aboutDescription p {
     font-size: 1rem;
   }
@@ -152,7 +166,7 @@
   }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 720px) {
   .aboutDescription p {
     font-size: 0.8rem;
     padding: 0.4rem;

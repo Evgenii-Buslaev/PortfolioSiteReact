@@ -1,6 +1,6 @@
 .navBtn {
   position: fixed;
-  left: 1rem;
+  left: 90%;
   width: 5rem;
   height: 5rem;
   background-color: rgb(151, 151, 151);
@@ -31,5 +31,11 @@
   .nameBtn {
     font-size: 1rem;
     line-height: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navBtn {
+    left: 85%;
   }
 }

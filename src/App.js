@@ -11,7 +11,7 @@ import "./App.css";
 import "./css/reset.css";
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
 
   function changeMode() {
     if (mode === "dark") {
@@ -44,20 +44,20 @@ function App() {
         click={scrollDown}
       />
 
-      <AppSection name="greeting">
+      <AppSection mode={mode} name="greeting">
         <Greeting mode={mode} changeMode={() => changeMode(mode)} />
       </AppSection>
 
-      <AppSection name="about">
-        <About />
+      <AppSection mode={mode} name="about">
+        <About mode={mode} />
       </AppSection>
 
       <AppSection name="portfolio">
-        <Portfolio />
+        <Portfolio mode={mode} />
       </AppSection>
 
-      <AppSection name="contacts">
-        <Contacts />
+      <AppSection mode={mode} name="contacts">
+        <Contacts mode={mode} />
       </AppSection>
     </div>
   );

@@ -6,6 +6,10 @@
   background-color: rgb(53, 50, 50);
 }
 
+.itemContLight {
+  background-color: rgb(155, 149, 149);
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -53,7 +57,14 @@
   }
 }
 
-@media (max-height: 750px) {
+@media (max-width: 550px) {
+  .item h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) and (max-height: 700px) {
   .itemCont {
     height: 15%;
   }

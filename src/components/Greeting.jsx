@@ -15,9 +15,7 @@ function Greeting({ mode, changeMode }) {
   const [underText, setUnderText] = useState("");
 
   const underTextRef = useRef(null);
-
   useEffect(() => {
-    window.scrollTo(0, 0);
     setTimeout(
       () => setText(greetingTextContent.slice(0, text.length + 1)),
       125
@@ -34,20 +32,36 @@ function Greeting({ mode, changeMode }) {
         <ImageButtons
           click={changeMode}
           style={{ top: "5rem", left: "80%" }}
-          image={dark}
-          alt="dark-mode"
+          image={light}
+          alt="light-mode"
         />
       ) : (
         <ImageButtons
           click={changeMode}
           style={{ top: "5rem", left: "80%" }}
-          image={light}
-          alt="light-mode"
+          image={dark}
+          alt="dark-mode"
         />
       )}
       <div className={styles.greetingCont}>
-        <h1>{text}</h1>
-        <h2 ref={underTextRef} style={{ opacity: 0 }}>
+        <h1
+          className={
+            mode === "dark"
+              ? styles.greetingText
+              : `${styles.greetingText} ${styles.greetingTextLight}`
+          }
+        >
+          {text}
+        </h1>
+        <h2
+          className={
+            mode === "dark"
+              ? styles.greetingUnderText
+              : `${styles.greetingUnderText} ${styles.greetingUnderTextLight}`
+          }
+          ref={underTextRef}
+          style={{ opacity: 0 }}
+        >
           {underText}
         </h2>
       </div>

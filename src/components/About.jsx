@@ -1,16 +1,30 @@
 import styles from "../css/About.module.css";
 import photo from "../images/evgenii-buslaev.PNG";
 
-function About() {
+function About({ mode }) {
   return (
     <div className={styles.aboutCont}>
-      <h1 className={styles.aboutHeader}>О себе</h1>
+      <h1
+        className={
+          mode === "dark"
+            ? styles.aboutHeader
+            : `${styles.aboutHeader} ${styles.aboutHeaderLight}`
+        }
+      >
+        О себе
+      </h1>
       <div className={styles.aboutContent}>
         <div className={styles.photoBtns}>
           <div className={styles.photoCont}>
             <img src={photo} alt="developer" />
           </div>
-          <div className={styles.aboutButtons}>
+          <div
+            className={
+              mode === "dark"
+                ? styles.aboutButtons
+                : `${styles.aboutButtons} ${styles.aboutButtonsLight}`
+            }
+          >
             <a href="/" target="_blank">
               Посмотреть резюме
             </a>
@@ -23,7 +37,13 @@ function About() {
             </a>
           </div>
         </div>
-        <div className={styles.aboutDescription}>
+        <div
+          className={
+            mode === "dark"
+              ? styles.aboutDescription
+              : `${styles.aboutDescription} ${styles.aboutDescriptionLight}`
+          }
+        >
           <p>
             В течение последних шести месяцев я{" "}
             <strong>самостоятельно обучаюсь веб-разработке.</strong> Выполняя

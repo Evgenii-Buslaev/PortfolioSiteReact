@@ -9,15 +9,23 @@
   padding: 0;
 }
 
-.greetingCont h1 {
+.greetingText {
   font-size: 7rem;
   font-weight: bold;
   color: rgba(230, 215, 215, 0.74);
 }
 
-.greetingCont h2 {
+.greetingTextLight {
+  color: #474646;
+}
+
+.greetingUnderText {
   font-size: 5rem;
   color: rgba(230, 215, 215, 0.74);
+}
+
+.greetingUnderTextLight {
+  color: #474646;
 }
 
 @media (max-width: 1550px) {
