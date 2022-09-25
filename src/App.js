@@ -21,10 +21,28 @@ function App() {
     setMode("dark");
   }
 
+  function scrollUp() {
+    window.scrollBy({ top: -window.innerHeight, behavior: "smooth" });
+  }
+
+  function scrollDown() {
+    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  }
+
   return (
     <div className="App">
-      <NavigationButton to="up" position={{ top: "10rem" }} text="ВВЕРХ" />
-      <NavigationButton to="down" position={{ bottom: "10rem" }} text="ВНИЗ" />
+      <NavigationButton
+        to="up"
+        position={{ top: "10rem" }}
+        text="ВВЕРХ"
+        click={scrollUp}
+      />
+      <NavigationButton
+        to="down"
+        position={{ bottom: "10rem" }}
+        text="ВНИЗ"
+        click={scrollDown}
+      />
 
       <AppSection name="greeting">
         <Greeting mode={mode} changeMode={() => changeMode(mode)} />

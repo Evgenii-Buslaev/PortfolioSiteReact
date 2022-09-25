@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import ImageButtons from "../UI/ImageButtons";
 
@@ -14,14 +14,18 @@ function Greeting({ mode, changeMode }) {
   const [text, setText] = useState("");
   const [underText, setUnderText] = useState("");
 
+  const underTextRef = useRef(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     setTimeout(
       () => setText(greetingTextContent.slice(0, text.length + 1)),
-      150
+      125
     );
-    if (text.length === greetingTextContent.length)
+    if (text.length === greetingTextContent.length) {
       setUnderText(underTextContent);
+      underTextRef.current.style.opacity = "1";
+    }
   }, [text, greetingTextContent, underTextContent]);
 
   return (
@@ -43,7 +47,9 @@ function Greeting({ mode, changeMode }) {
       )}
       <div className={styles.greetingCont}>
         <h1>{text}</h1>
-        <h2>{underText}</h2>
+        <h2 ref={underTextRef} style={{ opacity: 0 }}>
+          {underText}
+        </h2>
       </div>
     </>
   );
