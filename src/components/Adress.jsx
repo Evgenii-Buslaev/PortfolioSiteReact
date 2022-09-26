@@ -1,14 +1,8 @@
 import styles from "../css/Adress.module.css";
 
-function Adress({ mode, adress, link }) {
+function Adress({ adress, link }) {
   return (
-    <div
-      className={
-        mode === "dark"
-          ? styles.adressCont
-          : `${styles.adressCont} ${styles.adressContLight}`
-      }
-    >
+    <div className={styles.adressCont}>
       <h3>{adress}</h3>
       <iframe
         src={link}

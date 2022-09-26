@@ -12,6 +12,7 @@ import "./css/reset.css";
 
 function App() {
   const [mode, setMode] = useState("dark");
+  console.log(mode);
 
   function changeMode() {
     if (mode === "dark") {
@@ -52,7 +53,7 @@ function App() {
         <About mode={mode} />
       </AppSection>
 
-      <AppSection name="portfolio">
+      <AppSection mode={mode} name="portfolio">
         <Portfolio mode={mode} />
       </AppSection>
 

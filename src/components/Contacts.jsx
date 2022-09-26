@@ -33,7 +33,7 @@ function Contacts({ mode }) {
         className={
           mode === "dark"
             ? styles.contactsHeader
-            : `${styles.contactsHeaderLight}`
+            : `${styles.contactsHeader} ${styles.contactsHeaderLight}`
         }
       >
         Контакты
