@@ -12,7 +12,6 @@ import "./css/reset.css";
 
 function App() {
   const [mode, setMode] = useState("dark");
-  console.log(mode);
 
   function changeMode() {
     if (mode === "dark") {

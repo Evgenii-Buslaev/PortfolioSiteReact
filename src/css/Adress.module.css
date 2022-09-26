@@ -8,10 +8,16 @@
   height: 80%;
 }
 
-.adressCont h3 {
+.adressContHeader {
   margin: 1rem;
   font-size: 1.5rem;
   color: rgba(230, 215, 215, 0.74);
+}
+
+.adressContHeaderLight {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #474646;
 }
 
 .adressCont iframe {

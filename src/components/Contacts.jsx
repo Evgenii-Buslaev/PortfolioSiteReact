@@ -56,7 +56,11 @@ function Contacts({ mode }) {
         </div>
       </div>
       <NetworksBar array={contacts} />
-      <Adress adress="Тюмень, Кольский переулок, 1" link={adressLink} />
+      <Adress
+        mode={mode}
+        adress="Тюмень, Кольский переулок, 1"
+        link={adressLink}
+      />
     </div>
   );
 }
