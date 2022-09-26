@@ -3,30 +3,37 @@ import styles from "../css/AppSection.module.css";
 function AppSection({ mode, name, children }) {
   let contStyles;
 
-  if (name === "greeting") {
-    contStyles =
-      mode === "dark"
-        ? styles.greeting
-        : `${styles.greeting} ${styles.greetingLight}`;
-  }
+  switch (name) {
+    case "greeting":
+      contStyles =
+        mode === "dark"
+          ? styles.greeting
+          : `${styles.greeting} ${styles.greetingLight}`;
+      break;
 
-  if (name === "about") {
-    contStyles =
-      mode === "dark" ? styles.about : `${styles.about} ${styles.aboutLight}`;
-  }
+    case "about":
+      contStyles =
+        mode === "dark" ? styles.about : `${styles.about} ${styles.aboutLight}`;
+      break;
 
-  if (name === "portfolio") {
-    contStyles =
-      mode === "dark"
-        ? styles.portfolio
-        : `${styles.portfolio} ${styles.portfolioLight}`;
-  }
+    case "portfolio":
+      contStyles =
+        mode === "dark"
+          ? styles.portfolio
+          : `${styles.portfolio} ${styles.portfolioLight}`;
+      break;
 
-  if (name === "contacts") {
-    contStyles =
-      mode === "dark"
-        ? styles.contacts
-        : `${styles.contacts} ${styles.contactsLight}`;
+    case "contacts":
+      contStyles =
+        mode === "dark"
+          ? styles.contacts
+          : `${styles.contacts} ${styles.contactsLight}`;
+      break;
+    default:
+      contStyles =
+        mode === "dark"
+          ? styles.greeting
+          : `${styles.greeting} ${styles.greetingLight}`;
   }
 
   return <section className={contStyles}>{children}</section>;
