@@ -25,7 +25,11 @@ function About({ mode }) {
                 : `${styles.aboutButtons} ${styles.aboutButtonsLight}`
             }
           >
-            <a href="/" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/19sgQpUiM3WHP7_b8TIAhz5Tb4s_pd6n9/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               Посмотреть резюме
             </a>
             <a

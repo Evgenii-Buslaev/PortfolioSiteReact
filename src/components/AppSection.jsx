@@ -20,7 +20,6 @@ function AppSection({ mode, name, children }) {
       mode === "dark"
         ? styles.portfolio
         : `${styles.portfolio} ${styles.portfolioLight}`;
-    console.log(contStyles);
   }
 
   if (name === "contacts") {

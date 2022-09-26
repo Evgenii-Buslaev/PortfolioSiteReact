@@ -6,7 +6,7 @@
 }
 
 .greetingLight {
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(206, 206, 206);
   color: #474646;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .aboutLight {
-  background-color: rgb(153, 152, 152);
+  background-color: rgb(185, 185, 185);
 }
 
 .portfolio {
@@ -27,7 +27,7 @@
 }
 
 .portfolioLight {
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(206, 206, 206);
 }
 
 .contacts {
@@ -37,5 +37,5 @@
 }
 
 .contactsLight {
-  background-color: rgb(180, 179, 179);
+  background-color: rgb(185, 185, 185);
 }
