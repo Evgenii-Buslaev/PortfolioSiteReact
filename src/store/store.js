@@ -6,6 +6,7 @@ import weatherPic from "../images/background/weather-app.PNG";
 import notesJSPic from "../images/background/notes-app.PNG";
 import notesReactPic from "../images/background/notes_react.png";
 import codewarsPic from "../images/background/codewars.PNG";
+import moviesPic from "../images/background/movies-app.PNG";
 
 export const linksStore = {
   landing: {
@@ -36,6 +37,10 @@ export const linksStore = {
     deploy: "https://evgenii-buslaev.github.io/NotesAppReact/",
     code: "https://github.com/Evgenii-Buslaev/NotesAppReact",
   },
+  moviesReact: {
+    deploy: "https://evgenii-buslaev.github.io/MoviesFinderAppReact/",
+    code: "https://github.com/Evgenii-Buslaev/MoviesFinderAppReact",
+  },
   codewars: {
     code: "https://github.com/Evgenii-Buslaev/CodewarsKatas",
   },
@@ -49,6 +54,7 @@ const {
   weather,
   notesJS,
   notesReact,
+  moviesReact,
   codewars,
 } = linksStore;
 
@@ -117,7 +123,12 @@ export const store = {
         code: notesReact.code,
         image: notesReactPic,
       },
-      { name: "Поиск фильмов", deployment: "", code: "", image: null },
+      {
+        name: "Поиск фильмов",
+        deployment: moviesReact.deploy,
+        code: moviesReact.code,
+        image: moviesPic,
+      },
     ],
   },
   algoritmics: {
