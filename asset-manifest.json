@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/PortfolioSite/static/css/main.070856a8.css",
-    "main.js": "/PortfolioSite/static/js/main.9d5d8235.js",
-    "static/media/movies-app.PNG": "/PortfolioSite/static/media/movies-app.68c735176aaf57b484b7.PNG",
-    "static/media/landing.PNG": "/PortfolioSite/static/media/landing.c8f9c01942fe0610e627.PNG",
-    "static/media/product-card.PNG": "/PortfolioSite/static/media/product-card.531b12bc18177167206b.PNG",
-    "static/media/codewars.PNG": "/PortfolioSite/static/media/codewars.640f1bc2ae78cfa57390.PNG",
-    "static/media/LN.png": "/PortfolioSite/static/media/LN.66ffd29ac1bb3de67249.png",
-    "static/media/timer-app.PNG": "/PortfolioSite/static/media/timer-app.23261c719bfeeb445e2c.PNG",
-    "static/media/pomodoro-app.PNG": "/PortfolioSite/static/media/pomodoro-app.13fb0260ab1fce2f1b49.PNG",
-    "static/media/weather-app.PNG": "/PortfolioSite/static/media/weather-app.566bdeb6bd0f77092b70.PNG",
-    "static/media/evgenii-buslaev.PNG": "/PortfolioSite/static/media/evgenii-buslaev.55645339d165182dc2c0.PNG",
-    "static/media/notes-app.PNG": "/PortfolioSite/static/media/notes-app.27997b915a394203a7ec.PNG",
-    "static/media/notes_react.png": "/PortfolioSite/static/media/notes_react.feea6125fc0b0a1d4b6a.png",
-    "static/media/GH.png": "/PortfolioSite/static/media/GH.69641b05710a247e8238.png",
-    "static/media/VK.png": "/PortfolioSite/static/media/VK.0417a85b07e0398351a3.png",
-    "static/media/TG.png": "/PortfolioSite/static/media/TG.a63e42df1fd6f83eae6a.png",
-    "static/media/light-mode.png": "/PortfolioSite/static/media/light-mode.0fda764a8b96b2754c8e.png",
-    "index.html": "/PortfolioSite/index.html",
-    "main.070856a8.css.map": "/PortfolioSite/static/css/main.070856a8.css.map",
-    "main.9d5d8235.js.map": "/PortfolioSite/static/js/main.9d5d8235.js.map"
+    "main.css": "/PortfolioSiteReact/static/css/main.070856a8.css",
+    "main.js": "/PortfolioSiteReact/static/js/main.3b606bb9.js",
+    "static/media/movies-app.PNG": "/PortfolioSiteReact/static/media/movies-app.68c735176aaf57b484b7.PNG",
+    "static/media/landing.PNG": "/PortfolioSiteReact/static/media/landing.c8f9c01942fe0610e627.PNG",
+    "static/media/product-card.PNG": "/PortfolioSiteReact/static/media/product-card.531b12bc18177167206b.PNG",
+    "static/media/codewars.PNG": "/PortfolioSiteReact/static/media/codewars.640f1bc2ae78cfa57390.PNG",
+    "static/media/LN.png": "/PortfolioSiteReact/static/media/LN.66ffd29ac1bb3de67249.png",
+    "static/media/timer-app.PNG": "/PortfolioSiteReact/static/media/timer-app.23261c719bfeeb445e2c.PNG",
+    "static/media/pomodoro-app.PNG": "/PortfolioSiteReact/static/media/pomodoro-app.13fb0260ab1fce2f1b49.PNG",
+    "static/media/weather-app.PNG": "/PortfolioSiteReact/static/media/weather-app.566bdeb6bd0f77092b70.PNG",
+    "static/media/evgenii-buslaev.PNG": "/PortfolioSiteReact/static/media/evgenii-buslaev.55645339d165182dc2c0.PNG",
+    "static/media/notes-app.PNG": "/PortfolioSiteReact/static/media/notes-app.27997b915a394203a7ec.PNG",
+    "static/media/notes_react.png": "/PortfolioSiteReact/static/media/notes_react.feea6125fc0b0a1d4b6a.png",
+    "static/media/GH.png": "/PortfolioSiteReact/static/media/GH.69641b05710a247e8238.png",
+    "static/media/VK.png": "/PortfolioSiteReact/static/media/VK.0417a85b07e0398351a3.png",
+    "static/media/TG.png": "/PortfolioSiteReact/static/media/TG.a63e42df1fd6f83eae6a.png",
+    "static/media/light-mode.png": "/PortfolioSiteReact/static/media/light-mode.0fda764a8b96b2754c8e.png",
+    "index.html": "/PortfolioSiteReact/index.html",
+    "main.070856a8.css.map": "/PortfolioSiteReact/static/css/main.070856a8.css.map",
+    "main.3b606bb9.js.map": "/PortfolioSiteReact/static/js/main.3b606bb9.js.map"
   },
   "entrypoints": [
     "static/css/main.070856a8.css",
-    "static/js/main.9d5d8235.js"
+    "static/js/main.3b606bb9.js"
   ]
 }
