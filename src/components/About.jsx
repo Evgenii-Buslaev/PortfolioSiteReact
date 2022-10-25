@@ -26,7 +26,7 @@ function About({ mode }) {
             }
           >
             <a
-              href="https://drive.google.com/file/d/19sgQpUiM3WHP7_b8TIAhz5Tb4s_pd6n9/view?usp=sharing"
+              href="https://drive.google.com/file/d/17x_e6llw0isNqgVLrBUJExpzcFa9N1Po/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
