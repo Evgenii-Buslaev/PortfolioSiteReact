@@ -26,7 +26,7 @@ function About({ mode }) {
             }
           >
             <a
-              href="https://drive.google.com/file/d/1n-IaOtg-Q51qCKNvzQ5udN1QGQ-XuBdR/view"
+              href="https://drive.google.com/file/d/1CBk4Xryg_C7u6RBD5FVeLnWeVeUwqPjl/view"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ function About({ mode }) {
           }
         >
           <p>
-            В течение последних семи месяцев я{" "}
+            В течение последних восьми месяцев я{" "}
             <strong>самостоятельно обучаюсь веб-разработке.</strong> Выполняя
             работы, которые Вы увидите в разделе портфолио, я сталкивался со
             множеством проблем, способы решения которых я искал в google и/или
